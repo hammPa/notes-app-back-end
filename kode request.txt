@@ -1,0 +1,11 @@
+POST : 
+curl -X POST -H "Content-Type: application/json" -d "{\"title\": \"Judul Catatan\",\"tags\": [\"Tag 1\", \"Tag 2\"],\"body\": \"Konten catatan\"}" http://localhost:5000/notes
+
+GET : 
+curl -X GET http://localhost:5000/notes
+
+PUT : 
+curl -X PUT -H "Content-Type: application/json"  -d "{\"title\": \"Judul Catatan revisi\",\"tags\": [\"Tag 1\", \"Tag 2\"],\"body\": \"Konten catatan\"}" http://localhost:5000/notes/id?
+
+DELETE : 
+curl -X DELETE http://localhost:5000/notes/id
